@@ -1,0 +1,22 @@
+{
+  "name": "beeplay",
+  "version": "0.0.5",
+  "description": "Write A Song In JavaScript",
+  "homepage": "https://github.com/watilde/beeplay",
+  "authors": [
+    "Daijiro Wachi <daijiro.wachi@gmail.com>"
+  ],
+  "main": ["dist/beeplay.js", "dist/beeplay.min.js"],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": ["beeplay"],
+  "devDependencies": {
+    "bootstrap": "~3.1.1"
+  }
+}
