@@ -23,195 +23,96 @@
             </div>
           </div>
           <div class="inner cover">
-            <h1 class="cover-heading">Write A Song In JavaScript</h1>
+            <h1 class="cover-heading">適当に作ったよ</h1>
             <pre id="code" class="prettyprint">
-function nyan(option) {
-  var bpm = option.bpm || 120;
-  // Intro
-  var intro = beeplay({bpm: bpm})
-    .play(null, 2)
-    .play('D#5', 1/4).play('E5', 1/4).play('F#5', 1/2)
-    .play('B5', 1/2).play('D#5', 1/4).play('E5', 1/4)
-    .play('F#5', 1/4).play('B5', 1/4).play('C#6', 1/4).play('D#6', 1/4)
-    .play('C#6', 1/4).play('A#5', 1/4).play('B5', 1/2)
-    .play('F#5', 1/2).play('D#5', 1/4).play('E5', 1/4)
-    .play('F#5', 1/2).play('B5', 1/2)
-    .play('C#6', 1/4).play('A#5', 1/4).play('B5', 1/4).play('C#6', 1/4)
-    .play('E6', 1/4).play('D#6', 1/4).play('E6', 1/4).play('C#6', 1/4);
+              function nyan(option) {
+                var bpm = option.bpm || 140;
+                // Intro
+                var intro = beeplay({
+                    bpm: bpm
+                  })
+                  .play("A4", 1).play("A5", 1).play("E5", 1 / 2).play("G5", 3 / 2)
+                  .play(null, 1 / 2).play("E5", 1 / 2).play("B4", 1 / 2).play("E5", 1 / 2).play(
+                    "D5", 1 / 2).play("E5", 1 / 2).play("C5", 1 / 2).play("B4", 1 / 2)
+                  .play("A4", 1).play("A5", 1).play("E5", 1 / 2).play("G5", 3 / 2)
+                  .play(null, 1 / 2).play("E5", 1 / 2).play("B4", 1 / 2).play("E5", 1 / 2).play(
+                    "D5", 1 / 2).play("E5", 1 / 2).play("C5", 1 / 2).play("B4", 1 / 2)
+                  .play("A4", 1).play("A5", 1).play("E5", 1 / 2).play("G5", 3 / 2)
+                  .play(null, 1 / 2).play("E5", 1 / 2).play("B4", 1 / 2).play("E5", 1 / 2).play(
+                    "D5", 1 / 2).play("E5", 1 / 2).play("C5", 1 / 2).play("B4", 1 / 2)
+                  .play("A4", 1).play("A5", 1).play("E5", 1 / 2).play("G5", 3 / 2)
+                  .play(null, 1 / 2).play("E5", 1 / 2).play("B4", 1 / 2).play("E5", 1 / 2).play(
+                    "D5", 1 / 2).play("E5", 1 / 2).play("C5", 1 / 2).play("B4", 1 / 2)
+                  .play("C5", 1).play("D5", 1 / 2).play("E5", 1 / 2).play("D5", 1).play("A4",
+                    1).play("C5", 1).play("D5", 1 / 2).play("E5", 1 / 2).play("G5", 2)
+                  .play("C5", 1).play("D5", 1 / 2).play("E5", 1 / 2).play("D5", 1).play("A4",
+                    1).play("C5", 1).play("D5", 1 / 2).play("E5", 1 / 2).play("A5", 2);
 
-  // Amero 1st
-  var a1 = beeplay({bpm: bpm})
-    .play(null, 2)
-    .play(null, 8)
-    .play('F#6', 1/2).play('G#6', 1/2)
-    .play('C#6', 1/4).play('D#6', 1/2).play('B5', 1/4)
-    .play('D6', 1/4).play('C#6', 1/4).play('B5', 1/2)
-    .play('B5', 1/2).play('C#6', 1/2)
-    .play('D6', 1/2).play('D6', 1/4).play('C#6', 1/4)
-    .play('B5', 1/4).play('C#6', 1/4).play('D#6', 1/4).play('F#6', 1/4)
-    .play('G#6', 1/4).play('D#6', 1/4).play('F#6', 1/4).play('C#6', 1/4)
-    .play('D6', 1/4).play('B5', 1/4).play('C#6', 1/4).play('B5', 1/4)
-    .play('D#6', 1/2).play('F#6', 1/2)
-    .play('G#6', 1/4).play('D#6', 1/4).play('F#6', 1/4).play('C#6', 1/4)
-    .play('D#6', 1/4).play('B5', 1/4).play('D6', 1/4).play('D#6', 1/4)
-    .play('D6', 1/4).play('C#6', 1/4).play('B5', 1/4).play('C#6', 1/4)
-    .play('D6', 1/2).play('B5', 1/4).play('C#6', 1/4)
-    .play('D#6', 1/4).play('F#6', 1/4).play('C#6', 1/4).play('D6', 1/4)
-    .play('C#6', 1/4).play('B5', 1/4).play('C#6', 1/2)
-    .play('B5', 1/2).play('C#6', 1/2);
+                // Amero 1st
+                var a1 = beeplay({
+                    bpm: bpm
+                  })
+                  .play(null, 32)
+                  .play("C6", 2).play("D6", 2).play("C6", 2).play("E6", 2)
+                  .play("C6", 2).play("D6", 2).play("C6", 2).play("E6", 2);
 
-  // Amero 2nd
-  var a2 = beeplay({bpm: bpm})
-    .play(null, 2)
-    .play(null, 8)
-    .play(null, 16)
-    .play('F#6', 1/2).play('G#6', 1/2)
-    .play('C#6', 1/4).play('D#6', 1/2).play('B5', 1/4)
-    .play('D6', 1/4).play('C#6', 1/4).play('B5', 1/2)
-    .play('B5', 1/2).play('C#6', 1/2)
-    .play('D6', 1/2).play('D6', 1/4).play('C#6', 1/4)
-    .play('B5', 1/4).play('C#6', 1/4).play('D#6', 1/4).play('F#6', 1/4)
-    .play('G#6', 1/4).play('D#6', 1/4).play('F#6', 1/4).play('C#6', 1/4)
-    .play('D6', 1/4).play('B5', 1/4).play('C#6', 1/4).play('B5', 1/4)
-    .play('D#6', 1/2).play('F#6', 1/2)
-    .play('G#6', 1/4).play('D#6', 1/4).play('F#6', 1/4).play('C#6', 1/4)
-    .play('D#6', 1/4).play('B5', 1/4).play('D6', 1/4).play('D#6', 1/4)
-    .play('D6', 1/4).play('C#6', 1/4).play('B5', 1/4).play('C#6', 1/4)
-    .play('D6', 1/2).play('B5', 1/4).play('C#6', 1/4)
-    .play('D#6', 1/4).play('F#6', 1/4).play('C#6', 1/4).play('D6', 1/4)
-    .play('C#6', 1/4).play('B5', 1/4).play('C#6', 1/2)
-    .play('B5', 1/2).play('B5', 1/2);
-
-  // Bmero 1st
-  var b1 = beeplay({bpm: bpm})
-    .play(null, 2)
-    .play(null, 8)
-    .play(null, 16)
-    .play(null, 16)
-    .play('B5', 1/2).play('F#5', 1/4).play('G#5', 1/4)
-    .play('B5', 1/2).play('F#5', 1/4).play('G#5', 1/4)
-    .play('B5', 1/4).play('C#6', 1/4).play('D#6', 1/4).play('B5', 1/4)
-    .play('E6', 1/4).play('D#6', 1/4).play('E6', 1/4).play('F#6', 1/4)
-    .play('B5', 1/2).play('B5', 1/2)
-    .play('F#5', 1/4).play('G#5', 1/4).play('B5', 1/4).play('F#5', 1/4)
-    .play('E6', 1/4).play('D#6', 1/4).play('C#6', 1/4).play('B5', 1/4)
-    .play('F#5', 1/4).play('D#5', 1/4).play('E5', 1/4).play('F#5', 1/4)
-    .play('B5', 1/2).play('F#5', 1/4).play('G#5', 1/4)
-    .play('B5', 1/2).play('F#5', 1/4).play('G#5', 1/4)
-    .play('B5', 1/4).play('B5', 1/4).play('C#6', 1/4).play('D#6', 1/4)
-    .play('C#6', 1/4).play('F#5', 1/4).play('G#5', 1/4).play('F#5', 1/4)
-    .play('B5', 1/2).play('B5', 1/4).play('A#5', 1/4)
-    .play('B5', 1/4).play('F#5', 1/4).play('G#5', 1/4).play('B5', 1/4)
-    .play('E6', 1/4).play('D#6', 1/4).play('E6', 1/4).play('F#6', 1/4)
-    .play('B5', 1/2).play('A#5', 1/2);
-
-  // Bmero 2nd
-  var b2 = beeplay({bpm: bpm})
-    .play(null, 2)
-    .play(null, 8)
-    .play(null, 16)
-    .play(null, 16)
-    .play(null, 16)
-    .play('B5', 1/2).play('F#5', 1/4).play('G#5', 1/4)
-    .play('B5', 1/2).play('F#5', 1/4).play('G#5', 1/4)
-    .play('B5', 1/4).play('C#6', 1/4).play('D#6', 1/4).play('B5', 1/4)
-    .play('E6', 1/4).play('D#6', 1/4).play('E6', 1/4).play('F#6', 1/4)
-    .play('B5', 1/2).play('B5', 1/2)
-    .play('F#5', 1/4).play('G#5', 1/4).play('B5', 1/4).play('F#5', 1/4)
-    .play('E6', 1/4).play('D#6', 1/4).play('C#6', 1/4).play('B5', 1/4)
-    .play('F#5', 1/4).play('D#5', 1/4).play('E5', 1/4).play('F#5', 1/4)
-    .play('B5', 1/2).play('F#5', 1/4).play('G#5', 1/4)
-    .play('B5', 1/2).play('F#5', 1/4).play('G#5', 1/4)
-    .play('B5', 1/4).play('B5', 1/4).play('C#6', 1/4).play('D#6', 1/4)
-    .play('C#6', 1/4).play('F#5', 1/4).play('G#5', 1/4).play('F#5', 1/4)
-    .play('B5', 1/2).play('B5', 1/4).play('A#5', 1/4)
-    .play('B5', 1/4).play('F#5', 1/4).play('G#5', 1/4).play('B5', 1/4)
-    .play('E6', 1/4).play('D#6', 1/4).play('E6', 1/4).play('F#6', 1/4)
-    .play('B5', 1/2).play('C#6', 1/2);
-
-  // Back
-  // A
-  var back = beeplay({bpm: bpm})
-    .play(null, 2)
-    .play(null, 8)
-    .play('E3', 1/2).play(['B3', 'E4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('D#3', 1/2).play(['A#3', 'D#4'], 1/2)
-    .play('G#3', 1/2).play(['D#4', 'G#4'], 1/2)
-    .play('C#3', 1/2).play(['G#3', 'C#4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('C#3', 1/4).play('C#4', 1/4).play('D#3', 1/4).play('D#4', 1/4)
-    // B
-    .play('E3', 1/2).play(['B3', 'E4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('D#3', 1/2).play(['A#3', 'D#4'], 1/2)
-    .play('G#3', 1/2).play(['D#4', 'G#4'], 1/2)
-    .play('C#3', 1/2).play(['G#3', 'C#4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    // loop
-    .play('E3', 1/2).play(['B3', 'E4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('D#3', 1/2).play(['A#3', 'D#4'], 1/2)
-    .play('G#3', 1/2).play(['D#4', 'G#4'], 1/2)
-    .play('C#3', 1/2).play(['G#3', 'C#4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('C#3', 1/4).play('C#4', 1/4).play('D#3', 1/4).play('D#4', 1/4)
-    .play('E3', 1/2).play(['B3', 'E4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('D#3', 1/2).play(['A#3', 'D#4'], 1/2)
-    .play('G#3', 1/2).play(['D#4', 'G#4'], 1/2)
-    .play('C#3', 1/2).play(['G#3', 'C#4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('E3', 1/2).play(['B3', 'E4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('D#3', 1/2).play(['A#3', 'D#4'], 1/2)
-    .play('G#3', 1/2).play(['D#4', 'G#4'], 1/2)
-    .play('C#3', 1/2).play(['G#3', 'C#4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('C#3', 1/4).play('C#4', 1/4).play('D#3', 1/4).play('D#4', 1/4)
-    .play('E3', 1/2).play(['B3', 'E4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('D#3', 1/2).play(['A#3', 'D#4'], 1/2)
-    .play('G#3', 1/2).play(['D#4', 'G#4'], 1/2)
-    .play('C#3', 1/2).play(['G#3', 'C#4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('E3', 1/2).play(['B3', 'E4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('D#3', 1/2).play(['A#3', 'D#4'], 1/2)
-    .play('G#3', 1/2).play(['D#4', 'G#4'], 1/2)
-    .play('C#3', 1/2).play(['G#3', 'C#4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('C#3', 1/4).play('C#4', 1/4).play('D#3', 1/4).play('D#4', 1/4)
-    .play('E3', 1/2).play(['B3', 'E4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('D#3', 1/2).play(['A#3', 'D#4'], 1/2)
-    .play('G#3', 1/2).play(['D#4', 'G#4'], 1/2)
-    .play('C#3', 1/2).play(['G#3', 'C#4'], 1/2)
-    .play('F#3', 1/2).play(['C#4', 'F#4'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2)
-    .play('B2', 1/2).play(['F#3', 'B3'], 1/2);
-}</pre>
+                // Amero 2nd
+                var a2 = beeplay({
+                    bpm: bpm
+                  })
+                  .play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4)
+                  .play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4)
+                  .play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4)
+                  .play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4)
+                  .play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4)
+                  .play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4)
+                  .play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4)
+                  .play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play(
+                    "A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4).play("A3", 1 / 4)
+                  .play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play(
+                    "C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4)
+                  .play("D4", 1 / 4).play("D4", 1 / 4).play("D4", 1 / 4).play("D4", 1 / 4).play(
+                    "D4", 1 / 4).play("D4", 1 / 4).play("D4", 1 / 4).play("D4", 1 / 4)
+                  .play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play(
+                    "C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4)
+                  .play("E4", 1 / 4).play("E4", 1 / 4).play("E4", 1 / 4).play("E4", 1 / 4).play(
+                    "E4", 1 / 4).play("E4", 1 / 4).play("E4", 1 / 4).play("E4", 1 / 4)
+                  .play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play(
+                    "C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4)
+                  .play("D4", 1 / 4).play("D4", 1 / 4).play("D4", 1 / 4).play("D4", 1 / 4).play(
+                    "D4", 1 / 4).play("D4", 1 / 4).play("D4", 1 / 4).play("D4", 1 / 4)
+                  .play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play(
+                    "C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4).play("C4", 1 / 4)
+                  .play("E4", 1 / 4).play("E4", 1 / 4).play("E4", 1 / 4).play("E4", 1 / 4).play(
+                    "E4", 1 / 4).play("E4", 1 / 4).play("E4", 1 / 4).play("E4", 1 / 4);
+              }
+</pre>
             <button id="play" class="btn btn-lg btn-primary">
               <span class="glyphicon glyphicon-play"></span>
             </button>
-            <a href="js/nyan.js" target="_blank">nyan.js</a>
-            /
-            <a href="http://jsfiddle.net/S66zA/" target="_blank">Edit in jsfiddle</a>
-          </div>
-          <div class="mastfoot">
-            <div class="inner">
-              <p><a href="https://github.com/watilde">@watilde</a></p>
-            </div>
           </div>
         </div>
       </div>
