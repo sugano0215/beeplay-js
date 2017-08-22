@@ -21,7 +21,7 @@ $(function() {
   });
   $('#play2').on('click', function() {
     httpObj = new XMLHttpRequest();
-    httpObj.open("get", "../aaa.json", true);
+    httpObj.open("get", "../json/aaa.json", true);
     httpObj.send(null);
     httpObj.onload = function() {
       var data = JSON.parse(this.responseText);
