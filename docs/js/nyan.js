@@ -4,7 +4,7 @@ function nyan(option) {
   var intro = beeplay({
       bpm: bpm
     })
-    .play("A4", 1).play("A5", 1).play("E5", 1 / 2).play("G5", 3 / 2)
+    .play(["A4", "A5"], 1).play("A5", 1).play("E5", 1 / 2).play("G5", 3 / 2)
     .play(null, 1 / 2).play("E5", 1 / 2).play("B4", 1 / 2).play("E5", 1 / 2).play(
       "D5", 1 / 2).play("E5", 1 / 2).play("C5", 1 / 2).play("B4", 1 / 2)
     .play("A4", 1).play("A5", 1).play("E5", 1 / 2).play("G5", 3 / 2)
@@ -20,7 +20,8 @@ function nyan(option) {
       1).play("C5", 1).play("D5", 1 / 2).play("E5", 1 / 2).play("G5", 2)
     .play("C5", 1).play("D5", 1 / 2).play("E5", 1 / 2).play("D5", 1).play("A4",
       1).play("C5", 1).play("D5", 1 / 2).play("E5", 1 / 2).play("A5", 2);
-
+  var test = intro.toJSON();
+  console.log(JSON.stringify(test));
   var a1 = beeplay({
       bpm: bpm
     })
