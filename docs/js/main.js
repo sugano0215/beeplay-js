@@ -23,7 +23,7 @@ $(function() {
     httpObj = new XMLHttpRequest();
     httpObj.open("get", "../json/aaa.json", true);
     httpObj.onload = function() {
-      var data = JSON.parse(this.responseText);
+      var data = JSON.parse(httpObj.responseText);
       var song = beeplay({
         bpm: data.bpm, // 曲のテンポ。デフォルト120。
         key: data.key, // 曲のキー。無くてもいいです。
@@ -32,8 +32,8 @@ $(function() {
       data.notes.forEach(function(e, i, a) {
         song.play(a.notes, a.length);
       });
-      httpObj.send();
-    }
+    };
+    httpObj.send();
   });
   window.prettyPrint();
 });
