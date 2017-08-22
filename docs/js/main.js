@@ -21,7 +21,7 @@ $(function() {
   });
   $('#play2').on('click', function() {
     httpObj = new XMLHttpRequest();
-    httpObj.open("get", "../json/aaa.json", true);
+    httpObj.open("get", "json/aaa.json", true);
     httpObj.onload = function() {
       var data = JSON.parse(httpObj.responseText);
       var song = beeplay({
