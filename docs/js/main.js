@@ -30,7 +30,7 @@ $(function() {
         time: data.time, // 曲の拍子。デフォルト4/4。無くてもいいです。
       });
       data.notes.forEach(function(e, i, a) {
-        song.play(a.notes, a.length);
+        song.play(a[i].notes, a[i].length);
       });
     };
     httpObj.send();
