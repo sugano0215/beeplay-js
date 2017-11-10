@@ -87,7 +87,7 @@
           window.mozAudioContext ||
           window.oAudioContext ||
           window.msAudioContext;
-        this.context = window.__audioContext__ || new AudioContext();
+        this.context = new AudioContext();
         this.context.sampleRate = this.sampleRate;
         window.__audioContext__ = this.context;
       } catch (e) {

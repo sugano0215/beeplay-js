@@ -12,15 +12,12 @@ $(function() {
           nyan({
             bpm: 132
           });
-          putSound({
-            bpm: 132
-          })
         });
       });
     }
   });
   $('#play2').on('click', function() {
-    ABCJS.renderAbc("note", "M:4/4\nL:1/4\nK:C\nCD EF | GA Bc ||");
+
     httpObj = new XMLHttpRequest();
     httpObj.open("get", "json/aaa.json", true);
     httpObj.onload = function() {
