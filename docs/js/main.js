@@ -20,6 +20,7 @@ $(function() {
     }
   });
   $('#play2').on('click', function() {
+    ABCJS.renderAbc("note", "M:4/4\nL:1/4\nK:C\nCD EF | GA Bc ||");
     httpObj = new XMLHttpRequest();
     httpObj.open("get", "json/aaa.json", true);
     httpObj.onload = function() {
@@ -29,8 +30,8 @@ $(function() {
         key: data.key, // 曲のキー。無くてもいいです。
         time: data.time, // 曲の拍子。デフォルト4/4。無くてもいいです。
       });
-      data.notes.forEach(function(e, i, a) {
-        song.play(a[i].notes, a[i].length);
+      data.notes.map(function(i) {
+        song.play(i.notes, i.length);
       });
     };
     httpObj.send();
