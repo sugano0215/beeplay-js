@@ -44,6 +44,33 @@ $(function() {
       "notes": [],
       "abcnote": []
     };
-    ABCJS.renderAbc("a", "M:4/4\nL:1/4\nK:C\n" + object.abcnote.join(''));
+    ABCJS.renderAbc("a", "M:4/4\nL:1/32\nK:C\n" + object.abcnote.join(
+      ''));
   });
+  $('#return').on('click', function() {
+    object.notes.pop();
+    object.abcnote.pop();
+    ABCJS.renderAbc("a", "M:4/4\nL:1/32\nK:C\n" + object.abcnote.join(
+        '') +
+      "||");
+  });
+  $('#json_download').on('click', function() {
+    song = beeplay({});
+    object.notes.forEach(function(e, i, a) {
+      song.put(a[i].note, a[i].length);
+    });
+    var blob = new Blob([JSON.stringify(JSON.parse(song.toJSON()))], {
+      type: 'application\/json'
+    });
+    window.URL = window.URL || window.webkitURL;
+    $("#json_download").attr("href", window.URL.createObjectURL(blob));
+    $("#json_download").attr("download", "part.json");
+  });
+  $('#export').on('change', function() {
+    var input = $('#export [name=file]');
+    $.getJSON(input.val(), function(json) {
+      console.log(data);
+    })
+  });
+
 });
