@@ -76,7 +76,7 @@ $(function() {
     });
     window.URL = window.URL || window.webkitURL;
     $("#json_download").attr("href", window.URL.createObjectURL(blob));
-    $("#json_download").attr("download", "part.json");
+    $("#json_download").attr("download", "aaaa.json");
   });
   $('#export [name=file]').on('change', function() {
     reader.readAsText(event.target.files[0]);
